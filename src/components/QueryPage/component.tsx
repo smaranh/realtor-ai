@@ -11,7 +11,6 @@ export const QueryPage = () => {
   }, [propertiesResult])
 
   const handleSearch = () => {
-    alert(propertySearchText)
     parseProperties(propertySearchText)
   }
 

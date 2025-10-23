@@ -11,7 +11,7 @@ app.use(express.json({ strict: false }))
 const fetchProperties = async (propertiesRequirements: any) => {
   const options = {
     method: 'GET',
-    url: "https://zillow56.p.rapidapi.com/search",
+    url: "https://zillow-com1.p.rapidapi.com/property",
     params: {
       location: "riverside",
       status: "forSale",
@@ -21,8 +21,8 @@ const fetchProperties = async (propertiesRequirements: any) => {
       // baths: propertiesRequirements.bathrooms,
     },
     headers: {
-      'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
-      'X-RapidAPI-Host': 'zillow56.p.rapidapi.com',
+      'X-RapidAPI-Key': process.env.VITE_RAPIDAPI_KEY,
+      'X-RapidAPI-Host': 'zillow-com1.p.rapidapi.com',
     },
   }
   try {
