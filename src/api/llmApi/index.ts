@@ -4,8 +4,7 @@ import { StructuredOutputParser } from '@langchain/core/output_parsers'
 import { PromptTemplate } from '@langchain/core/prompts'
 import { RunnableSequence } from '@langchain/core/runnables'
 
-const key = process.env.VITE_OPENAI_API_KEY
-console.log(key)
+const key = process.env.OPENAI_API_KEY
 
 const llm = new ChatOpenAI({
   apiKey: key,

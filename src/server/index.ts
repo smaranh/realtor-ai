@@ -21,7 +21,7 @@ const fetchProperties = async (propertiesRequirements: any) => {
       // baths: propertiesRequirements.bathrooms,
     },
     headers: {
-      'X-RapidAPI-Key': process.env.VITE_RAPIDAPI_KEY,
+      'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
       'X-RapidAPI-Host': 'zillow-com1.p.rapidapi.com',
     },
   }
