@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useParseProperties } from './hook/useParseProperties'
 
+const DEFAULT_PROPERTY_SEARCH_TEXT = 'Looking for a 3 bedroom house in Riverside, California. The ending range is 1.5 million. The starting range is 600000.'
 
 export const QueryPage = () => {
-  const [propertySearchText, setPropertySearchText] = useState('Search for properties in Riverside, CA')
+  const [propertySearchText, setPropertySearchText] = useState(DEFAULT_PROPERTY_SEARCH_TEXT)
   const { propertiesResult, parseProperties } = useParseProperties()
 
   useEffect(() => {
