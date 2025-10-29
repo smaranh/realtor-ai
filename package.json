@@ -8,7 +8,8 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:server": "tsx --env-file=.env src/server/index.ts"
   },
   "dependencies": {
     "@langchain/core": "^1.0.1",
